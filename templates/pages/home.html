@@ -1,0 +1,16 @@
+<h1>Home</h1>
+<p>This is the home page.</p>
+
+<h2>My Current Tasks</h2>
+<ul>
+    {% for item in items %}
+        <li>
+            {{ item.name }} -
+            {% if item.completed %}
+                Completed
+            {% else %}
+                In Progress
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
