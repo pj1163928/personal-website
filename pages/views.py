@@ -11,10 +11,10 @@ def home(request):
         {'name': 'Complete CIDM 3312', 'completed': False},
     ]
     context = {'items': items}
-    return render(request, 'pages/home.html', context)
+    return render(request, 'home.html', context)
 
 def about(request):
-    return render(request, 'pages/about.html')
+    return render(request, 'about.html')
 
 def contact(request):
-    return render(request, 'pages/contact.html')
+    return render(request, 'contact.html')
